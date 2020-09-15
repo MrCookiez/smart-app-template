@@ -1,5 +1,16 @@
-const { EXTENSIONS } = require('rnv/dist/constants');
-const config = require('../metro.config');
+module.exports = config;
 
-config.resolver.sourceExts = EXTENSIONS.ios;
+const config = require("../metro.config");
+
+const sourceExts = [
+  "ios.mobile.js",
+  "mobile.js",
+  "ios.js",
+  "mobile.native.js",
+  "native.js",
+  "js",
+  "tsx",
+  "ts",
+];
+config.resolver.sourceExts = sourceExts;
 module.exports = config;

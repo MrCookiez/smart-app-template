@@ -1,6 +1,11 @@
 {
     "name": "smart-app-template",
     "version": "0.1.0",
+    "scripts": {
+        "dev": "npx rnv configure -p web-next --ci && next",
+        "build": "npx rnv configure -p web-next --ci && next build",
+        "start": "npx rnv configure -p web-next --ci && next start"
+    },
     "dependencies": {
         "@24i/nextgen-sdk-quantum": "^0.16.0",
         "@24i/nextgen-sdk-quarks": "^0.16.0",
@@ -16,7 +21,15 @@
         "react-native-vector-icons": "6.6.0",
         "react-native-web": "0.11.7",
         "react-native-web-image-loader": "0.0.5",
-        "renative": "0.30.4"
+        "renative": "0.30.4",
+        "@zeit/next-css": "1.0.1",
+        "next-routes": "1.4.2",
+        "@expo/next-adapter": "2.0.5",
+        "next-compose-plugins": "^2.2.0",
+        "next-fonts": "^1.0.3",
+        "next-images": "^1.3.1",
+        "babel-preset-expo": "^8.0.0",
+        "next-transpile-modules": "^3.0.2"
     },
     "devDependencies": {
         "rnv": "0.30.4",
