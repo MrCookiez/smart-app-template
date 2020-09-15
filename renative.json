@@ -1,0 +1,43 @@
+{
+    "projectName": "smart-app-template",
+    "workspaceID": "nextgen",
+    "paths": {
+        "appConfigsDir": "./appConfigs",
+        "platformTemplatesDir": "$RNV_HOME/platformTemplates",
+        "entryDir": "./",
+        "platformAssetsDir": "./platformAssets",
+        "platformBuildsDir": "./platformBuilds",
+        "projectConfigDir": "./projectConfig"
+    },
+    "defaults": {
+        "title": "smart-app-template",
+        "id": "com.mycompany.smart-app-template",
+        "supportedPlatforms": [
+            "android",
+            "androidtv",
+            "androidwear",
+            "chromecast",
+            "firefoxos",
+            "firefoxtv",
+            "ios",
+            "kaios",
+            "macos",
+            "tizen",
+            "tizenmobile",
+            "tizenwatch",
+            "tvos",
+            "web",
+            "web-next",
+            "webos",
+            "windows"
+        ]
+    },
+    "templates": {
+        "renative-template-blank": {
+            "version": "0.30.4"
+        }
+    },
+    "currentTemplate": "renative-template-blank",
+    "isNew": true,
+    "isMonorepo": false
+}
