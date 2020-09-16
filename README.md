@@ -1,4 +1,4 @@
-### Smart app template
+# Smart app template
 
 Foundations for your next project
 
