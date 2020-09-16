@@ -1,9 +1,9 @@
 const config = require("../metro.config");
 
 const sourceExts = [
-  "ios.mobile.js",
+  "android.mobile.js",
   "mobile.js",
-  "ios.js",
+  "android.js",
   "mobile.native.js",
   "native.js",
   "js",

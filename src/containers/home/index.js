@@ -1,4 +1,7 @@
 import React from "react";
+// Custom
+import NavLink from "../../components/Link";
+// Regular link
 import Link from "next/link";
 import { View, Text } from "react-native";
 import { platform } from "renative";
@@ -10,6 +13,13 @@ const isMobile = platform === "ios" || platform === "android";
 const Home = () => {
   return (
     <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
+      {isWeb && (
+        <NavLink
+          to={paths.profile("24i")}
+          name="Custom Link - profile (test)"
+        />
+      )}
+
       {isMobile && <Text>Profile</Text>}
       {isWeb && (
         <>

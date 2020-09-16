@@ -29,6 +29,16 @@ const Profile = () => {
           </Link>
         </>
       )}
+
+      {isMobile && <Text>Home</Text>}
+      {isWeb && (
+        <>
+          <Text>Home</Text>
+          <Link href={paths.home}>
+            <a>Go to home page</a>
+          </Link>
+        </>
+      )}
     </View>
   );
 };
