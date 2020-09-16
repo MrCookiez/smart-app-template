@@ -9,6 +9,8 @@ const isMobile = platform === "ios" || "android";
 
 const Service = () => (
   <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
+    <Text>Service page</Text>
+
     {isWeb && (
       <>
         <Text>Profile</Text>

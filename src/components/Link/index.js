@@ -1,13 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-function NavLink({ to, name }) {
-  const { href, as } = to;
+const NavLink = ({ to: { href, as }, name, prefetch, ...props }) => {
   return (
-    <Link href={href} as={as || false} passHref>
-      <a>{name}</a>
+    <Link href={href} as={as} passHref prefetch={prefetch || false}>
+      <a {...props}>{name}</a>
     </Link>
   );
-}
+};
 
 export default NavLink;
